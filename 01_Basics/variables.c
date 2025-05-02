@@ -10,6 +10,7 @@ int main() {
 
     printf("a = %d, b = %.2f, c = %c\n", a, b, c);
     return 0;
+    // 출력결과 : a = 20, b = 3.14, c = G
 }
 
 
@@ -18,6 +19,8 @@ int a = 10;
 void func() {
   int a = 30;
   printf("a : %d", a);  // func()의 지역변수 a(30) 출력
+  
+  // 출력결과 : a : 30
 }
 
 int myInfo() {
@@ -26,10 +29,14 @@ int myInfo() {
   char grade = 'A';
   
   printf("나이: %d세\n", age);
-  printf("키: %dcm\n", height);
-  printf("등급: %d등급\n", grade);
+  printf("키: %.1fcm\n", height);
+  printf("등급: %c등급\n", grade);
 
   return 0;
+
+  // 출력결과 : 나이: 27세
+  //           키: 180.7cm
+  //           등급: A등급
 }
 
 int changeNum() {
@@ -44,6 +51,8 @@ int changeNum() {
   printf("바꾼 후: a = %d, b = %d\n", a, b);
 
   return 0;
+  // 출력결과 : 바꾸기 전: a = 10, b = 20
+  //           바꾼 후: a = 20, b = 10
 }
 
 int checkSize() {
@@ -52,4 +61,9 @@ int checkSize() {
   printf("double: %zu바이트\n", sizeof(double));
   printf("char: %zu바이트\n", sizeof(char));
   return 0;
+
+  // 출력결과 : int: 4바이트
+  //           float: 4바이트
+  //           double: 8바이트
+  //           char: 1바이트
 }

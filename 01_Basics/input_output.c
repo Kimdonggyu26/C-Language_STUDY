@@ -13,6 +13,7 @@ int main() {
   printf("output : %d\n", sum);
 
   return 0;
+  // 출력결과 : output : (입력한값)
 }
 
 int main2() {
@@ -25,6 +26,9 @@ int main2() {
   printf("Character: %c\n", letter);
 
   return 0;
+  // 출력결과 : Integer: 42
+  //           Float: 3.14
+  //           Character: g
 }
 
 int main3() {
@@ -33,6 +37,7 @@ int main3() {
   printf("%c, %d", a, a); // A = 65(아스키코드)  --> %c == B / %d == 66
 
   return 0;
+  // 출력결과 : B, 66
 }
 
 int main4() {
@@ -43,6 +48,8 @@ int main4() {
   printf("%d\n", b--);
 
   return 0;
+  // 출력결과 : 6, 6, 8, 8
+  // 실행 후 a와 b의 값 : a = 7, b = 7
 }
 
 int main5() {
@@ -51,6 +58,7 @@ int main5() {
   printf("%d, %d", a, b);
 
   return 0;
+  // 출력결과 : 40, 6
 }
 
 int main6() {
@@ -64,6 +72,7 @@ int main6() {
   printf("%d", sum);
 
   return 0;
+  // 출력결과 : 31, 31
 }
 
 int main7() {
@@ -76,4 +85,5 @@ int main7() {
   printf("%d", r1+r2);
 
   return 0;
+  // 출력결과 : 2
 }
